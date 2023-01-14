@@ -54,6 +54,17 @@ button {
   border-radius: 5px;
   color: var(--grey);
   font-weight: 600;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.461);
+}
+
+button:hover {
+  opacity: 80%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 60%;
 }
 
 .about-group {
