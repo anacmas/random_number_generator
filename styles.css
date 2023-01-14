@@ -3,12 +3,12 @@
 :root {
   --white: #fff;
   --black: #1c2b2d;
-  --blue: #31326f;
+  --green: #447662;
   --light-green: #6fbb9d;
   --color-primary: #fff4c6;
   --primary-shadow: #dfc86e;
   --grey: #eee;
-  --dark-grey: #222831;
+  --dark-grey: #5c5c5c;
 }
 
 * {
@@ -42,6 +42,7 @@ body {
 .number {
   font-size: 45px;
   font-weight: 200;
+  color: var(--dark-grey);
 }
 
 button {
@@ -49,6 +50,37 @@ button {
   width: 150px;
   height: 30px;
   border: none;
-  background-color: var(--light-green);
+  background-color: var(--green);
   border-radius: 5px;
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.about-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.about a {
+  color: var(--light-green);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.about a:hover {
+  color: var(--green);
+  transition: 0.3s;
+}
+
+.about-group img {
+  width: 20px;
+  opacity: 60%;
+  margin-left: 10px;
+}
+
+.about-group img:hover {
+  opacity: 30%;
+  transition: 0.3s;
 }
